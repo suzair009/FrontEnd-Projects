@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Quiz App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container my-5">
+    <div class="alert alert-secondary">
+        <h3 class="text-center">Welcome to Basic Quiz App!</h3>
+      </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title" id="question">Question Text</h5>
+            <form id="quizForm">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="answer" id="a" class="answer">
+                    <label class="form-check-label" for="a" id="a_text">Answer A</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="answer" id="b" class="answer">
+                    <label class="form-check-label" for="b" id="b_text">Answer B</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="answer" id="c" class="answer">
+                    <label class="form-check-label" for="c" id="c_text">Answer C</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="answer" id="d" class="answer">
+                    <label class="form-check-label" for="d" id="d_text">Answer D</label>
+                </div>
+            </form>
+            <button class="btn btn-primary mt-4" id="submit">Submit</button>
+        </div>
+    </div>
+    <div id="result" class="mt-4"></div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
